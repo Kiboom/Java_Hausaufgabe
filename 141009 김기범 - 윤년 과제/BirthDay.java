@@ -36,6 +36,10 @@ public class BirthDay {
 			rightwrong = "무효 (날짜에 적합하지 않은 숫자 입력)";
 			return;
 		}
+		if(month==2 && day>29){
+			rightwrong = "무효 (날짜에 적합하지 않은 숫자 입력)";
+			return;
+		}
 		if(month==2 && day==29 && !isLeapYear()){
 			rightwrong = "무효 (윤년이 아닌데 29일 입력)";
 			return;
@@ -45,7 +49,7 @@ public class BirthDay {
 		}
 	}
 
-	public void printResult() {					// 입력한 날짜와 유효 여부 출력
+	public void showResult() {					// 입력한 날짜와 유효 여부 출력
 		checkRightWrong();
 		System.out.print(year +"년 " + month +"월 "+ day +"일 : ");
 		System.out.println(rightwrong);	
