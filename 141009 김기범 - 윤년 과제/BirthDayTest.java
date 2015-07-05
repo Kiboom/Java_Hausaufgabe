@@ -7,9 +7,9 @@ public class BirthDayTest {
 		BirthDay date2 = new BirthDay(2014, 7, 10);
 		BirthDay date3 = new BirthDay(2100, 2, 29);
 		
-		date1.showResult();
-		date2.showResult();
-		date3.showResult();
+		date1.printValidity();
+		date2.printValidity();
+		date3.printValidity();
 	}
 
 }
