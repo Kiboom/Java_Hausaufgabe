@@ -5,7 +5,7 @@ public class BirthDay {
 	private int year;
 	private int month;
 	private int day;
-	private String rightwrong="유효";
+	private String validity="유효";
 	
 	public BirthDay(int year, int month, int day){		// 생성자
 		this.year = year;
@@ -31,28 +31,28 @@ public class BirthDay {
 		}
 	}
 	
-	public void checkRightWrong() {				// 입력한 날짜가 유효인지 아닌지 확인
+	public void checkValidity() {				// 입력한 날짜가 유효인지 아닌지 확인
 		if(year<1 || month<1 || month>12 || day<1 || day>31){
-			rightwrong = "무효 (날짜에 적합하지 않은 숫자 입력)";
+			validity = "무효 (날짜에 적합하지 않은 숫자 입력)";
 			return;
 		}
 		if(month==2 && day>29){
-			rightwrong = "무효 (날짜에 적합하지 않은 숫자 입력)";
+			validity = "무효 (날짜에 적합하지 않은 숫자 입력)";
 			return;
 		}
 		if(month==2 && day==29 && !isLeapYear()){
-			rightwrong = "무효 (윤년이 아닌데 29일 입력)";
+			validity = "무효 (윤년이 아닌데 29일 입력)";
 			return;
 		}
 		if(day==31 && isTheMonthHas30()){
-			rightwrong = "무효 (입력한 월은 31일이 없음)";
+			validity = "무효 (입력한 월은 31일이 없음)";
 		}
 	}
 
-	public void showResult() {					// 입력한 날짜와 유효 여부 출력
-		checkRightWrong();
+	public void printValidity() {					// 입력한 날짜와 유효 여부 출력
+		checkValidity();
 		System.out.print(year +"년 " + month +"월 "+ day +"일 : ");
-		System.out.println(rightwrong);	
+		System.out.println(validity);	
 	}
 }
 
