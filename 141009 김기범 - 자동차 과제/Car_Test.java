@@ -7,16 +7,13 @@ public class Car_Test {
 		
 		for(int i=0 ; i<6 ; i++){					// 자동차 회사에 차종별로 입고!
 			if(i<3){
-				Sonata sonata = new Sonata();
-				KiboomCorp.addCar(sonata);
+				KiboomCorp.addCar(new Sonata());
 			}
 			else if(i<5){
-				Grandeur grandeur = new Grandeur();
-				KiboomCorp.addCar(grandeur);
+				KiboomCorp.addCar(new Grandeur());
 			}
 			else{
-				Genesis genesis = new Genesis();
-				KiboomCorp.addCar(genesis);
+				KiboomCorp.addCar(new Genesis());
 			}
 		}
 			
