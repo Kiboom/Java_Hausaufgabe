@@ -18,7 +18,7 @@ public class Company {
 		return company;
 	}
 
-	public void addCar(Car car){							// 자동차 입고!
+	public void addNewCar(Car car){							// 자동차 입고!
 		CarList.add(car);
 	}	
 }

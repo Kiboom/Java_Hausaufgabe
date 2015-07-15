@@ -3,14 +3,14 @@ package car;
 import java.util.ArrayList;
 
 public class Calculator {
-	int SumPrices=0;								
+	int Sum = 0;								
 
-	public int calcPrices(Company company){
+	public int SumPrices(Company company){
 		ArrayList<Car> CarList = company.getList();
 		
 		for(Car car : CarList){
-			SumPrices += car.getPrice();
+			Sum += car.getPrice();
 		}
-		return SumPrices;
+		return Sum;
 	}
 }
