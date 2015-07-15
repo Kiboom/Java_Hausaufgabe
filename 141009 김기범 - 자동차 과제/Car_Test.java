@@ -12,9 +12,8 @@ public class Car_Test {
 		KiboomCorp.addNewCar(new Grandeur());
 		KiboomCorp.addNewCar(new Grandeur());	
 		KiboomCorp.addNewCar(new Genesis());
-			
-		int Sum = calc.SumPrices(KiboomCorp);				
-		System.out.println("귀사가 보유한 자동차 총 가격 : " + Sum +"$");
+						
+		System.out.println("귀사가 보유한 자동차 총 가격 : " + calc.SumPrices(KiboomCorp) +"$");
 	}
 
 }
