@@ -3,7 +3,7 @@ package car;
 import java.util.ArrayList;
 
 public class Calculator {
-	int Sum = 0;								
+	private int Sum = 0;								
 
 	public int SumPrices(Company company){
 		ArrayList<Car> CarList = company.getList();
