@@ -33,13 +33,10 @@ public class Student {
 
 	
 	/* 수강 신청 */
-	public void setEnrollList(ArrayList<Subject> enrollList) {
-		this.enrollList = enrollList;
-	}
-	public void enroll(Subject sub){
+	public void enroll(Subject sub){			// 과목1개 수강신청
 		enrollList.add(sub);
 	}
-	public void enroll(Subject sub1, Subject sub2){
+	public void enroll(Subject sub1, Subject sub2){		// 과목2개 수강신청
 		enrollList.add(sub1);
 		enrollList.add(sub2);
 	}
