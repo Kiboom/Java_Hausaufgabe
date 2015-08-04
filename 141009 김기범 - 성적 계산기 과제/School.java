@@ -16,7 +16,7 @@ public class School {
 	}
 	
 	
-	/* 학생 리스트에 추가 삭제*/
+	/* 재학생 리스트에 추가 삭제*/
 	private ArrayList<Student> studList = new ArrayList<Student>();
 	
 	public void addStudent(Student student){
